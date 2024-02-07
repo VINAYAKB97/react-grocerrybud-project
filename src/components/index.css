@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.item-head-text{
+    border-bottom: 2px solid crimson;
+    padding: 10px 0px; 
+    text-transform:capitalize;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+.input-container{
+    padding: 20px;
+    margin-top: 20px;
+}
+.input-container , input{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
+    background-color: transparent;
+}
+input.error{
+    border: 2px solid crimson;
+    border-right: none;
+}
+input.ok{
+    border: 2px solid black;
+}
+.btn{
+    padding: 3px 30px 12px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: transparent;
+    border:none;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.show-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.displayitem-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(250, 240, 96);
+    width: 20%;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.remove-item{
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    color: crimson;
+    cursor: pointer;
+}
+@media screen and (max-width:390px){
+    .displayitem-container{
+        width: 80%;
+    }
+    
+}
